@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('/background.png');
+    background-size: cover;
+    background-position: center;
+}
+
+input {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    width: 100%;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(20px);
+    width: 400px;
+    height: 500px;
+    gap: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+}
+
+.enter-location {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    padding: 10px;
+    width: 90%;
+}
+
+.enter-location img {
+    width: 25px;
+    height: auto;
+}
+
+.current-weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.current-weather img {
+    width: 160px;
+    height: auto;
+}
+
+.temperature {
+    display: flex;
+    align-items: center;
+    height: auto;
+    gap: 3px;
+}
+
+#temperature {
+    font-size: 45px;
+    font-weight: 600;
+}
+
+#unit {
+    font-size: 20px;
+    font-weight: 600;
+    align-self: flex-start;
+    padding-top: 3px;
+}
+
+.weather-description {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.weather-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.weather-info img {
+    width: 50px;
+    height: auto;
+}
+
+.humidity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.humidity-value {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.wind {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.wind-value {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#humidity-text {
+    font-size: 12px;
+}
+
+#wind-text {
+    font-size: 12px;
+    width: 100%;
+}
+
+#search {
+    cursor: pointer;
+}
